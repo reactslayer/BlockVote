@@ -1,0 +1,105 @@
+.container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    
+    
+}
+.vote_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+   
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.vote_input-box {
+    width: auto;
+    display:flex;
+    flex-direction: column;
+
+    margin: 20px;
+    font-size: 17px;
+}
+.party-logo{
+    width: 100px;
+    height: 100px;;
+    margin-left: 100px;
+    transition: transform 1s;
+    
+}
+.select{
+    background-color:rgb(113, 250, 145);
+}
+.select>.party-logo{
+    transform: scale(1.5,1.5);
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: scale(0.8, 0.8);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(1,1);
+      opacity: 1;
+    }
+  }
+.candid{
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    margin: 20px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    transition: transform 1s ,background-color 1s;
+    cursor: pointer;
+    text-align: left;
+}
+.candid:hover{
+    transform : scale(1.05,1.05);
+    
+}
+.vote_container {
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    margin: 30px;
+    overflow: auto;
+    min-height: auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.container2{
+   display:flex;
+   flex-direction:column; 
+   margin: 50px;
+   
+}
+.first ,.second ,.third{
+    color:rgb(15, 15, 15);
+    padding: 20px 200px 20px 200px;
+    background-color:rgb(255, 255, 255);
+    width: fit-content;
+    border-radius:20px;
+    font-size:25px;
+    text-align:center;
+    opacity: 0.8;
+    margin: 50px 10px 50px 100px;
+    
+}
+
+.second-container{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 200px;
+}
+.first-container{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
